@@ -1,0 +1,49 @@
+// General Styles (Desktop)
+
+:root {
+    font-size: 62.5% !important;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+.mobile-content {
+    display: none;
+}
+
+
+
+// General Styles (Mobile)
+
+@media all and (max-width:376px) {
+    .mobile-content {
+        display: inline-block;
+    }
+}
+
+
+@import 'body';
